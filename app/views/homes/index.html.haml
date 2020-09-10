@@ -1,1 +1,113 @@
-%h2 Hello World
+.header
+  %header.header.flex-box
+    %h1.site-title
+      =link_to "/" do
+        = image_tag src="site-logo@2x.png"
+    %nav.header-nav
+      %ul.nav-list
+        %li.nav-item
+          =link_to "/" do
+            = image_tag scr="site-logo@2x.png"
+        %li.nav-item
+          =link_to "#" do
+            = "About us"
+        %li.nav-item
+          =link_to "#" do
+            = "Works"
+        %li.nav-item
+          =link_to "#" do
+            = "Culture"
+        %li.nav-item
+          =link_to "#" do
+            = "Topics"
+        %li.nav-item
+          =link_to "#" do
+            = "Contact"
+    %button.burger-btn
+      %span.bars
+        %span.bar.bar_top
+        %span.bar.bar_mid
+        %span.bar.bar_bottom
+      %span.menu menu
+    %span.burger-musk
+.main
+  .fv
+    .kv-wrapper
+      .copy-wrapper
+        %p.copy_jp デザインで人を笑顔にする会社
+        %p.copy_company DIGSMILE INC.
+        %p.main-copy 
+          Design
+          %br>/
+          for
+          %br>/
+          smile.
+  %section.section-wrapper
+    .content-wrapper.about-bg
+      .about-content
+        %h2.section-title About us
+        %p.section-text.lines
+          DIGSMILEは、デザインで人を笑顔にする会社。
+          %br>/
+          なんでもない日常に少しのワクワクと遊び心を提供します。
+          %br>/
+          笑顔には世界を変える力がある、デザインには人を幸せにする力がある。
+          %br>/
+          毎日に幸せを感じて生きていきたい。
+          %br>/
+          DIGSMILEの社名にはそんな想いが込められています。
+        = link_to "#", class: "link-btn" do
+          ="read more"
+  .gray-bg.l-section-wrapper
+    .flex-box.l-content-wrapper
+      %section.s-section-wrapper
+        .s-content-wrapper
+          %h2.section-title Works
+          .section-img-wrapper
+            = image_tag("works-img@2x.png", alt: "黒と白の椅子や机が並んでいる風景")
+          %p DIGSMILEの制作実績を紹介します。
+          = link_to "#", class: "link-btn" do
+            ="read more"
+      %section.s-section-wrapper
+        .s-content-wrapper
+          %h2.section-title culture
+          .section-img-wrapper
+            = image_tag("culture-img@2x.png", alt: "夕焼けを背景に飛び跳ねる6人の人物のシルエット")
+          %p DIGSMILEの社内文化について紹介します。
+          = link_to "#", class: "link-btn" do
+            ="read more"
+  %section.section-wrapper
+    .content-wrapper
+      %h2.section-title Latest topics
+      %ul.topics-list.ml-auto
+        %li.topics-item
+          =link_to "#" do
+            %time.topics-date 2020.02.01
+            %h3.topics-title イベントレポート「VRクリエイター座談会 〜5Gの次に来るもの〜」
+        %li.topics-item
+          =link_to "#" do
+            %time.topics-date 2020.01.18
+            %h3.topics-title プレスリリースのお知らせ DIGGIN’ RECORDS
+        %li.topics-item
+          =link_to "#" do
+            %time.topics-date 2020.01.01
+            %h3.topics-title 新年明けましておめでとうございます
+      = link_to "#", class: "ml-link-btn" do
+        ="read more"
+  %section.section-wrapper.gray-bg
+    .content-wrapper.flex-box
+      .contact-content
+        %h2.section-title Contact
+        %p.contact-text.lines
+          制作の依頼、取材の依頼、IRや採用についての連絡・お問い
+          %br>/
+          合わせはコンタクトページから承っております。
+          %br>/
+          まずはお気軽にご連絡ください。担当者から改めて返信いた
+          %br>/
+        = link_to "#", class: "link-btn" do
+          ="read more"
+      .contact-img-wrapper
+        = image_tag("recruit-img@2x.png", alt: "屋外での集合写真")
+.footer
+  %small &copy;2018 DIGSMILE INC.
