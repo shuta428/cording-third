@@ -1,2 +1,116 @@
-%h1 Abouts#index
-%p Find me in app/views/abouts/index.html.haml
+.header
+  %header.header.flex-box
+    %h1.site-title
+      =link_to "/" do
+        = image_tag src="site-logo@2x.png", class: "logo-site"
+    %nav.header-nav
+      %ul.nav-list
+        %li.nav-item
+          =link_to "/" do
+            = image_tag scr="site-simbol@2x.png"
+        %li.nav-item
+          =link_to abouts_index_path do
+            = "About us"
+        %li.nav-item
+          =link_to "#" do
+            = "Works"
+        %li.nav-item
+          =link_to "#" do
+            = "Culture"
+        %li.nav-item
+          =link_to "#" do
+            = "Topics"
+        %li.nav-item
+          =link_to "#" do
+            = "Contact"
+    %button.burger-btn
+      %span.bars
+        %span.bar.bar_top
+        %span.bar.bar_mid
+        %span.bar.bar_bottom
+      %span.menu menu
+    %span.burger-musk
+.main
+  .fv
+    .kv-wrapper
+      %h1.page-title 
+        About us
+        %span.text DIGSMILEについて
+  %section.section-wrapper
+    .content-wrapper
+      .vision-wrapper
+      %h2.section-title VISION
+      %p.vision デザインで人を笑顔にする会社
+      %p.vision-text.lines 
+        私達のデザインで人が笑顔になる。 
+      %p.vision-text.lines 
+        そんなデザインを目指しています。
+      %p.vision-text.lines 
+        私達が考える人を笑顔にできるデザインとは、
+        %br>/
+        デザインが課題を適切に解決ができているかどうか。
+      %p.vision-text.lines 
+        ビジュアルだけではなく、 
+        %br>/
+        本当に求められているものは何かを考え抜いて、 
+        %br>/
+        デザインしていきたい。
+      %p.vision-text.lines 
+        誰かの幸せを創ることも、
+        %br>/ 
+        世界の常識を変えていくことだってできる。
+      %p.vision-text.lines 
+        私達はデザインの力を信じています。
+  %section.section-wrapper
+    .content-wrapper.relative
+      .vision-content.gray-bg
+        .vision-content-inner
+          %h2.section-title Ceo message
+          %p.ceo-message.lines
+            良いデザインは人を幸せにする。
+          %p.ceo-message.lines
+            私達はそう信じています。
+          %p.ceo-message.lines
+            デザインを通して、ビジネスの課題とユーザーの課題を
+            %br>/
+            解決することで、世の中を幸せにしていきたい。
+          %p.ceo-message.lines  
+            現在はあらゆるプロダクトがデジタル化されており、デ
+            %br>/
+            ザイナーに対する需要はますます高まっています。それ
+            %br>/
+            とともに、期待される役割も幅広くなりつつあります。
+          %p.ceo-message.lines  
+            クリエイティブで社会の可能性を切り開いていく。 
+          %p.ceo-message.lines
+            変化の激しい現代、私達はデザインの力で社会を良い方
+            %br>/
+            向に変革していく企業を目指していきます。
+        .ceo-img-wrapper
+          = image_tag("ceo-img@2x.png", alt: "CEOの画像")
+  %section.section-wrapper
+    .content.wrapper
+      %h2.section-title Company
+      %dl.campany-info-list
+        %div
+          %dt.company-info-title 社名
+          %dd.company-info-detail 株式会社DIGSMILE
+        %div
+          %dt.company-info-title 代表取締役
+          %dd.company-info-detail テイラー・スウィフト
+        %div
+          %dt.company-info-title 設立
+          %dd.company-info-detail 2020年1月1日
+        %div
+          %dt.company-info-title 資本金
+          %dd.company-info-detail 1億円
+        %div
+          %dt.company-info-title 所在地
+          %dd.company-info-detail 東京都新宿区xx-0-0-0
+        %div
+          %dt.company-info-title 電話番号
+          %dd.company-info-detail 03-0000-0000
+      .maps-outer
+        = image_tag("マスクグループ 8@2x.png", alt: "地図")
+.footer
+  %small &copy;2018 DIGSMILE INC.
