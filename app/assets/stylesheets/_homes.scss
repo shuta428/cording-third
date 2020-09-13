@@ -77,7 +77,7 @@ button{
   left: 4vw;
   z-index: 1;
 }
-.site-title.black svg path{
+.site-title.black .site-title{
   fill: #333;
   transition: fill .3s;
 }
@@ -144,7 +144,18 @@ button{
 }
 
 //ハンバーガーボタン（メニューが開いた時）
-
+.bar.cross.bar_top{
+  transform: translateY(2px)rorate(30deg);
+  transition: transform .3s;
+}
+.bar.cross.bar_mid{
+  opacity: 0;
+  transition: opacity .3s;
+}
+.bar.cross.bar_bottom{
+  transform: translateY(-2px)rorate(-30deg);
+  transition: transform .3s;
+}
 
 //ハンバーガーメニューが開いた時
 body.noscroll{
@@ -165,6 +176,15 @@ body.noscroll{
   background-color: rgba(0,0,0,.5);
   z-index: 1;
 }
+.burger-btn.black .bar{
+  background: #333;
+  transition: background-color .3s;
+}
+.burger-btn.black .menu{
+  color: #333;
+  transition: color .3s;
+}
+
 
 .fv {
   height: 100vh;
