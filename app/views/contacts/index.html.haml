@@ -50,16 +50,16 @@
               %span.required 必須
             %ul.inquiry-type-list
               %li.inquiry-type-item
-                %input.radio-btn#request{:type => "radio"}/
+                %input.radio-btn#request{:type => "radio", :name => "inqury-type"}
                 %label{:for => "request"} 制作依頼
               %li.inquiry-type-item
-                %input.radio-btn#recruit{:type => "radio"}/
+                %input.radio-btn#recruit{:type => "radio", :name => "inqury-type"}
                 %label{:for => "recruit"} 採用
               %li.inquiry-type-item
-                %input.radio-btn#ir{:type => "radio"}/
+                %input.radio-btn#ir{:type => "radio", :name => "inqury-type"}
                 %label{:for => "ir"} IR
               %li.inquiry-type-item
-                %input.radio-btn#other{:type => "radio"}/
+                %input.radio-btn#other{:type => "radio", :name => "inqury-type"}
                 %label{:for => "other"} その他
           %li.form-item
             .form-item-title
@@ -78,22 +78,20 @@
           %li.form-item
             .form-item-title
               %label{:for => "tel"} 電話番号
-              %span.required 必須
             %input.text-box#tel{:type => "text"}/
           %li.form-item
             .form-item-title
               %label{:for => "detail"} お問い合わせ内容
               %span.required 必須
-            %textarea.detail{:cols => "30", :name => "", :rows => "10", :type => "text"}
+            %textarea.textarea#detail{:cols => "30", :name => "", :rows => "10", :type => "text"}
         %p.privacy-policy-title Privacy policy
         .privacy-policy-wrapper
           %p.privacy-policy-detail
             個人情報保護方針
             %br>/
-            株式会社DIGSMILE（以下、当社）では、個人情報の重要性を認識し、以下の基準に従って、適
+            株式会社DIGSMILE（以下、当社）では、個人情報の重要性を認識し、以下の基準に従って、適切な管理、保護に努めます。
             %br>/
-            切な管理、保護に努めます。
-            
+            %br>/
             1.個人情報の収集、利用
             %br>/
             当社では、お客様との取引、サービスの提供のために個人情報を適法に収集し、収集した目的の
@@ -151,3 +149,4 @@
 
 
 
+<input type="radio" class="radio-btn" name="inqyury-type" id="request" checked>
