@@ -77,9 +77,12 @@ button{
   left: 4vw;
   z-index: 1;
 }
-.site-title.black .site-title{
-  fill: #333;
+.site-title.black{
+  background-image: image-url('site-logo-black2@2x.png');
+  background-size: cover;
+  background-position: center 0;
   transition: fill .3s;
+  
 }
 .header-nav {
   font-weight: bold;
@@ -149,7 +152,6 @@ button{
   transition: transform .3s;
 }
 .bar.cross.bar_mid{
-  opacity: 0;
   transition: opacity .3s;
 }
 .bar.cross.bar_bottom{

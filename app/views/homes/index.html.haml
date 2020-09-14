@@ -9,7 +9,7 @@
           =link_to "/" do
             = image_tag scr="site-simbol@2x.png"
         %li.nav-item
-          =link_to "#" do
+          =link_to abouts_index_path do
             = "About us"
         %li.nav-item
           =link_to "#" do
@@ -21,7 +21,7 @@
           =link_to "#" do
             = "Topics"
         %li.nav-item
-          =link_to "#" do
+          =link_to contacts_index_path do
             = "Contact"
     %button.burger-btn
       %span.bars
@@ -56,7 +56,7 @@
           毎日に幸せを感じて生きていきたい。
           %br>/
           DIGSMILEの社名にはそんな想いが込められています。
-        = link_to "#", class: "link-btn" do
+        = link_to abouts_index_path, class: "link-btn" do
           ="read more"
   .gray-bg.l-section-wrapper
     .flex-box.l-content-wrapper
@@ -105,7 +105,7 @@
           %br>/
           まずはお気軽にご連絡ください。担当者から改めて返信いた
           %br>/
-        = link_to "#", class: "link-btn" do
+        = link_to contacts_index_path, class: "link-btn" do
           ="read more"
       .contact-img-wrapper
         = image_tag("recruit-img@2x.png", alt: "屋外での集合写真")
