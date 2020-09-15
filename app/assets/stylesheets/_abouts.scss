@@ -1,0 +1,172 @@
+.abouts-fv {
+  height: 60vh;
+  min-height: 450px;
+}
+
+.abouts-fv::after{
+  content:"";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #222;
+  width: 50%;
+  height: 60vh;
+  min-height: 450px;
+  z-index: -1;
+}
+
+.abouts-kv-wrapper {
+  height: 86%;
+  width: 76.4%;
+  background-image: image-url('heading-img@2x.png');
+  background-size: cover;
+  background-position: center 0;
+  position: relative;
+}
+.abouts-page-title{
+  font-size: 7.2rem;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.abouts-page-title span{
+  font-size: 2rem;
+  display: block;
+}
+
+.vision-wrapper{
+  padding-left: 15.7vh;
+}
+.vision{
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.vision-text{
+  font-weight: bold;
+}
+.ceo-img-wrapper{
+  width: 36.4%;
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+.vision-content{
+  width: 840px;
+  max-width: 70%;
+  margin-left: auto;
+  padding: 120px 0 60px;
+}
+.vision-content-inner{
+  max-width: 400px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.relative{
+  position: relative;
+  padding-top: 150px;
+}
+.ceo-message{
+  font-weight: bold;
+}
+//section-wrapper:last-of-type
+
+.company-info-list{
+  border-top: 1px solid #ddd;
+  margin-bottom: 40px;
+}
+.company-info-list>div{
+  display: flex;
+  padding: 20px 0;
+  max-width: 800px;
+  margin-left: auto;
+  border-bottom: 1px solid #ddd;
+}
+.company-info-title{
+  font-weight: bold;
+  flex-basis: 142px;
+}
+.maps-outer{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 32.7%;
+}
+.maps-outer iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+@media screen and (max-width: 768px){
+
+//base_sp
+body{
+  font-size: 1.4rem;
+}
+.section-wrapper{
+  padding: 40px 0;
+}
+.content-wrapper{
+  padding: 0 4vw;
+}
+
+//header_sp
+.site-title{
+  width: 100px;
+  top: 21px;
+}
+.burger-btn{
+  top: 28px;
+}
+.header-nav{
+  width: 67.7vw;
+}
+.abouts-page-title{
+  font-size: 5.2rem;
+  transform: translate(30%,-50%);
+}
+//.section-wrapper:first-of-type{
+  //padding-top: 80px;
+
+//.section-wrapper:last-of-type{
+  //padding-bottom: 80px;
+
+.content-wrapper.relative{
+  padding-top: 120px;
+}
+.ceo-img-wrapper{
+  width: 100%;
+  max-width: 320px;
+}
+}
+
+@media screen and (max-width: 768px){
+
+  .vision-wrapper{
+    padding-left: 0;
+  }
+  .vision-content{
+    width: 100%;
+    max-width: 100%;
+  }
+  .ceo-img-wrapper{
+    max-width: 90%;
+    left: 0;
+  }
+  .ceo-img-wrapper img{
+    height: 226px;
+    object-fit: cover;
+  }
+
+  .maps-outer{
+    padding-top: 140%;
+  }
+}
