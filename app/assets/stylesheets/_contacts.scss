@@ -1,8 +1,43 @@
-// Place all the styles related to the contacts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.contacts-fv {
+  height: 60vh;
+  min-height: 450px;
+}
 
-//contact-form
+.contacts-fv::after{
+  content:"";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #222;
+  width: 50%;
+  height: 60vh;
+  min-height: 450px;
+  z-index: -1;
+}
+
+.contacts-kv-wrapper {
+  height: 86%;
+  width: 76.4%;
+  background-image: image-url('heading-img_contact@2x.png');
+  background-size: cover;
+  background-position: center 0;
+  position: relative;
+}
+.contacts-page-title{
+  font-size: 7.2rem;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.contacts-page-title span{
+  font-size: 2rem;
+  display: block;
+}
+
 .contact-wrapper{
   padding: 120px 0;
 }
@@ -119,6 +154,10 @@ input,textarea{
 }
 .contact-inner{
   padding: 0 4vw;
+}
+.contacts-page-title{
+  font-size: 5.2rem;
+  transform: translate(30%,-50%);
 }
 .inquiry-type-list{
   flex-direction: column;
